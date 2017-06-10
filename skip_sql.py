@@ -40,7 +40,7 @@ class Run(Connection):
 
 def main():
     try:
-        r = Run("db-nlp-slave.cxleyzgw272j.us-east-1.rds.amazonaws.com",3306,"opsadmin","inveno_cn!admin+2016","information_schema")
+        r = Run("10.10.100.100",3306,"opsadmin","123456","information_schema")
         
         while True:
             r.kill_id()
